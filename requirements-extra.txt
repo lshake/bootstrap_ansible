@@ -1,0 +1,2 @@
+nailgun>=0.32.0
+apypie>=0.0.1
