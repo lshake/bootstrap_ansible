@@ -1,0 +1,10 @@
+action: py37-ansible27, msg: getenv
+cwd: /Users/lshakesp/projects/bootstrap_ansible/.tox
+cmd: /usr/local/opt/python@2/bin/python2.7 -m virtualenv --no-download --python /usr/local/opt/python/bin/python3.7 py37-ansible27
+Using base prefix '/usr/local/Cellar/python/3.7.4_1/Frameworks/Python.framework/Versions/3.7'
+New python executable in /Users/lshakesp/projects/bootstrap_ansible/.tox/py37-ansible27/bin/python3.7
+Also creating executable in /Users/lshakesp/projects/bootstrap_ansible/.tox/py37-ansible27/bin/python
+Installing setuptools, pip, wheel...done.
+/usr/local/lib/python2.7/site-packages/virtualenv.py:1041: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Running virtualenv with interpreter /usr/local/opt/python/bin/python3.7

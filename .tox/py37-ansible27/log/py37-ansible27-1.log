@@ -1,0 +1,174 @@
+action: py37-ansible27, msg: getenv
+cwd: /Users/lshakesp/projects/bootstrap_ansible
+cmd: /Users/lshakesp/projects/bootstrap_ansible/.tox/py37-ansible27/bin/python -m pip install -rrequirements.txt -rrequirements-aws.txt docker==3.7.3 molecule==2.22 ansible==2.7.13
+Collecting docker==3.7.3
+  Using cached https://files.pythonhosted.org/packages/09/da/7cc7ecdcd01145e9924a8ccbe9c1baf3a362fc75d4cb150676eb5231ea60/docker-3.7.3-py2.py3-none-any.whl
+Collecting molecule==2.22
+  Using cached https://files.pythonhosted.org/packages/af/be/3084cbedc051e179062cf887fd5933c1c5f1031200f62f718048f36dc604/molecule-2.22-py2.py3-none-any.whl
+Collecting ansible==2.7.13
+Collecting boto>=2.41.0 (from -r requirements-aws.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/23/10/c0b78c27298029e4454a472a1919bde20cb182dab1662cec7f2ca1dcc523/boto-2.49.0-py2.py3-none-any.whl
+Collecting boto3>=1.3.1 (from -r requirements-aws.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/06/04/257af61ae66188fe4cc7fce0a1b1ad4baf675d9e47924c83d723904ce159/boto3-1.10.17-py2.py3-none-any.whl (128kB)
+Collecting six>=1.4.0 (from docker==3.7.3)
+  Downloading https://files.pythonhosted.org/packages/65/26/32b8464df2a97e6dd1b656ed26b2c194606c16fe163c695a992b36c11cdf/six-1.13.0-py2.py3-none-any.whl
+Collecting requests!=2.18.0,>=2.14.2 (from docker==3.7.3)
+  Using cached https://files.pythonhosted.org/packages/51/bd/23c926cd341ea6b7dd0b2a00aba99ae0f828be89d72b2190f27c11d4b7fb/requests-2.22.0-py2.py3-none-any.whl
+Collecting docker-pycreds>=0.4.0 (from docker==3.7.3)
+  Using cached https://files.pythonhosted.org/packages/f5/e8/f6bd1eee09314e7e6dee49cbe2c5e22314ccdb38db16c9fc72d2fa80d054/docker_pycreds-0.4.0-py2.py3-none-any.whl
+Collecting websocket-client>=0.32.0 (from docker==3.7.3)
+  Using cached https://files.pythonhosted.org/packages/29/19/44753eab1fdb50770ac69605527e8859468f3c0fd7dc5a76dd9c4dbd7906/websocket_client-0.56.0-py2.py3-none-any.whl
+Collecting tree-format>=0.1.2 (from molecule==2.22)
+Collecting tabulate>=0.8.3 (from molecule==2.22)
+Collecting click-completion>=0.3.1 (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/93/18/74e2542defdda23b021b12b835b7abbd0fc55896aa8d77af280ad65aa406/click-completion-0.5.2.tar.gz
+Collecting testinfra<4,>=3.0.6 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/bc/41/7eb3c233e1b4a41e80ea015b55f4d62c0038d209ba083b34d7292897bab6/testinfra-3.2.0-py2.py3-none-any.whl
+Collecting python-gilt<2,>=1.2.1 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/d5/8b/aafb0d991763df480dc149b8c034b57ea42d7de4ef8d5b5137c6f38105a6/python_gilt-1.2.1-py3-none-any.whl
+Collecting cerberus>=1.3.1 (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/90/a7/71c6ed2d46a81065e68c007ac63378b96fa54c7bb614d653c68232f9c50c/Cerberus-1.3.2.tar.gz (52kB)
+Collecting yamllint<2,>=1.15.0 (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/06/a9/2697a044b133a7eb1ed14071020254965519e4a9ec7bd0749d9745da6468/yamllint-1.18.0-py2.py3-none-any.whl (57kB)
+Collecting paramiko<3,>=2.5.0 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/4b/80/74dace9e48b0ef923633dfb5e48798f58a168e4734bca8ecfaf839ba051a/paramiko-2.6.0-py2.py3-none-any.whl
+Collecting pexpect<5,>=4.6.0 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/0e/3e/377007e3f36ec42f1b84ec322ee12141a9e10d808312e5738f52f80a232c/pexpect-4.7.0-py2.py3-none-any.whl
+Collecting psutil<6,>=5.4.6; sys_platform != "win32" and sys_platform != "cygwin" (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/03/9a/95c4b3d0424426e5fd94b5302ff74cea44d5d4f53466e1228ac8e73e14b4/psutil-5.6.5.tar.gz (447kB)
+Collecting Jinja2>=2.10.1 (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/65/e0/eb35e762802015cab1ccee04e8a277b03f1d8e53da3ec3106882ec42558b/Jinja2-2.10.3-py2.py3-none-any.whl (125kB)
+Collecting flake8>=3.6.0 (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/f8/1f/7ea40d1e4146ea55dbab41cda1376db092a75794914169aabd7e8d7a7def/flake8-3.7.9-py2.py3-none-any.whl (69kB)
+Collecting anyconfig==0.9.7 (from molecule==2.22)
+Collecting click>=6.7 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pre-commit<2,>=1.17.0 (from molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/89/97/fe584f47dc43332ac254ed3940d2a3401877be73e3150a557641c9f812a6/pre_commit-1.20.0-py2.py3-none-any.whl (165kB)
+Collecting PyYAML<6,>=5.1 (from molecule==2.22)
+Collecting ansible-lint<5,>=4.0.2 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/7d/ac/908e2bb33564640a321fd7d88c465073e643de24c0f941c90be7a05ec68c/ansible_lint-4.1.0-py2.py3-none-any.whl
+Collecting cookiecutter>=1.6.0 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/16/99/1ca3a75978270288354f419e9166666801cf7e7d8df984de44a7d5d8b8d0/cookiecutter-1.6.0-py2.py3-none-any.whl
+Collecting colorama>=0.3.9 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+Collecting sh>=1.12.14 (from molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/4a/22/17b22ef5b049f12080f5815c41bf94de3c229217609e469001a8f80c1b3d/sh-1.12.14-py2.py3-none-any.whl
+Requirement already satisfied: setuptools in ./.tox/py37-ansible27/lib/python3.7/site-packages (from ansible==2.7.13) (39.1.0)
+Collecting cryptography (from ansible==2.7.13)
+  Downloading https://files.pythonhosted.org/packages/6b/4a/ce93178469d4460d6b3a5e648fc1a2f426030f3d30a12d7ed4df73d044de/cryptography-2.8-cp34-abi3-macosx_10_6_intel.whl (1.6MB)
+Collecting s3transfer<0.3.0,>=0.2.0 (from boto3>=1.3.1->-r requirements-aws.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/16/8a/1fc3dba0c4923c2a76e1ff0d52b305c44606da63f718d14d3231e21c51b0/s3transfer-0.2.1-py2.py3-none-any.whl (70kB)
+Collecting jmespath<1.0.0,>=0.7.1 (from boto3>=1.3.1->-r requirements-aws.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/83/94/7179c3832a6d45b266ddb2aac329e101367fbdb11f425f13771d27f225bb/jmespath-0.9.4-py2.py3-none-any.whl
+Collecting botocore<1.14.0,>=1.13.17 (from boto3>=1.3.1->-r requirements-aws.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/d0/d8/67eec2958748b0084370a6ffb1cdb5c658400fbc7da51915303607ae7af3/botocore-1.13.17-py2.py3-none-any.whl (5.4MB)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests!=2.18.0,>=2.14.2->docker==3.7.3)
+  Downloading https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl (125kB)
+Collecting certifi>=2017.4.17 (from requests!=2.18.0,>=2.14.2->docker==3.7.3)
+  Using cached https://files.pythonhosted.org/packages/18/b0/8146a4f8dd402f60744fa380bc73ca47303cccf8b9190fd16a827281eac2/certifi-2019.9.11-py2.py3-none-any.whl
+Collecting chardet<3.1.0,>=3.0.2 (from requests!=2.18.0,>=2.14.2->docker==3.7.3)
+  Using cached https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl
+Collecting idna<2.9,>=2.5 (from requests!=2.18.0,>=2.14.2->docker==3.7.3)
+  Using cached https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3-none-any.whl
+Collecting shellingham (from click-completion>=0.3.1->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/2d/ac/e8a34d4b3d24bf554f40651b2aac549a3fc7223725bf10fbdfe2083b6372/shellingham-1.3.1-py2.py3-none-any.whl
+Collecting pytest!=3.0.2 (from testinfra<4,>=3.0.6->molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/93/16/f6dec5178f5f4141e80dfc4812a9aba88f5f29ca881f174ab1851181d016/pytest-5.2.2-py3-none-any.whl (227kB)
+Collecting fasteners (from python-gilt<2,>=1.2.1->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/18/bd/55eb2d6397b9c0e263af9d091ebdb756b15756029b3cededf6461481bc63/fasteners-0.15-py2.py3-none-any.whl
+Collecting git-url-parse (from python-gilt<2,>=1.2.1->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/ba/88/f58232bf654417831c9b25bf848bc015ed896c944e7c078a8e7626afe52c/git_url_parse-1.2.2-py3-none-any.whl
+Collecting pbr (from python-gilt<2,>=1.2.1->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/46/a4/d5c83831a3452713e4b4f126149bc4fbda170f7cb16a86a00ce57ce0e9ad/pbr-5.4.3-py2.py3-none-any.whl
+Collecting pathspec>=0.5.3 (from yamllint<2,>=1.15.0->molecule==2.22)
+Collecting bcrypt>=3.1.3 (from paramiko<3,>=2.5.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/62/20/4c94f3f8dfc6b8720c8bc903ce2951ec6397ad864e3a64b4abdced014514/bcrypt-3.1.7-cp34-abi3-macosx_10_6_intel.whl
+Collecting pynacl>=1.0.1 (from paramiko<3,>=2.5.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/cd/c9/4d6deea9d900345b1243cc3e6265110697fae5e594689cfa1ba34e0ef4a8/PyNaCl-1.3.0-cp34-abi3-macosx_10_6_intel.whl
+Collecting ptyprocess>=0.5 (from pexpect<5,>=4.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/d1/29/605c2cc68a9992d18dada28206eeada56ea4bd07a239669da41674648b6f/ptyprocess-0.6.0-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10.1->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/ce/c6/f000f1af136ef74e4a95e33785921c73595c5390403f102e9b231b065b7a/MarkupSafe-1.1.1-cp37-cp37m-macosx_10_6_intel.whl
+Collecting entrypoints<0.4.0,>=0.3.0 (from flake8>=3.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+Collecting mccabe<0.7.0,>=0.6.0 (from flake8>=3.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+Collecting pycodestyle<2.6.0,>=2.5.0 (from flake8>=3.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/0e/0c/04a353e104d2f324f8ee5f4b32012618c1c86dd79e52a433b64fceed511b/pycodestyle-2.5.0-py2.py3-none-any.whl
+Collecting pyflakes<2.2.0,>=2.1.0 (from flake8>=3.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/84/f2/ed0ffb887f8138a8fe5a621b8c0bb9598bfb3989e029f6c6a85ee66628ee/pyflakes-2.1.1-py2.py3-none-any.whl
+Collecting virtualenv>=15.2 (from pre-commit<2,>=1.17.0->molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/c5/97/00dd42a0fc41e9016b23f07ec7f657f636cb672fad9cf72b80f8f65c6a46/virtualenv-16.7.7-py2.py3-none-any.whl (3.4MB)
+Collecting importlib-metadata; python_version < "3.8" (from pre-commit<2,>=1.17.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/f6/d2/40b3fa882147719744e6aa50ac39cf7a22a913cbcba86a0371176c425a3b/importlib_metadata-0.23-py2.py3-none-any.whl
+Collecting cfgv>=2.0.0 (from pre-commit<2,>=1.17.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/6e/ff/2e6bcaff26058200717c469a0910da96c89bb00e9cc31b68aa0bfc9b1b0d/cfgv-2.0.1-py2.py3-none-any.whl
+Collecting nodeenv>=0.11.1 (from pre-commit<2,>=1.17.0->molecule==2.22)
+Collecting toml (from pre-commit<2,>=1.17.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Collecting aspy.yaml (from pre-commit<2,>=1.17.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/99/ce/78be097b00817ccf02deaf481eb7a603eecee6fa216e82fa7848cd265449/aspy.yaml-1.3.0-py2.py3-none-any.whl
+Collecting identify>=1.0.0 (from pre-commit<2,>=1.17.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/87/e4/66e3c82550017d3ee03c9f216e0c3dbf1c8c580c567777537adce8823597/identify-1.4.7-py2.py3-none-any.whl
+Collecting ruamel.yaml (from ansible-lint<5,>=4.0.2->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/fa/90/ecff85a2e9c497e2fa7142496e10233556b5137db5bd46f3f3b006935ca8/ruamel.yaml-0.16.5-py2.py3-none-any.whl
+Collecting whichcraft>=0.4.0 (from cookiecutter>=1.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/b5/a2/81887a0dae2e4d2adc70d9a3557fdda969f863ced51cd3c47b587d25bce5/whichcraft-0.6.1-py2.py3-none-any.whl
+Collecting jinja2-time>=0.1.0 (from cookiecutter>=1.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/6a/a1/d44fa38306ffa34a7e1af09632b158e13ec89670ce491f8a15af3ebcb4e4/jinja2_time-0.2.0-py2.py3-none-any.whl
+Collecting poyo>=0.1.0 (from cookiecutter>=1.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/42/50/0b0820601bde2eda403f47b9a4a1f270098ed0dd4c00c443d883164bdccc/poyo-0.5.0-py2.py3-none-any.whl
+Collecting binaryornot>=0.2.0 (from cookiecutter>=1.6.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/24/7e/f7b6f453e6481d1e233540262ccbfcf89adcd43606f44a028d7f5fae5eb2/binaryornot-0.4.4-py2.py3-none-any.whl
+Collecting future>=0.15.2 (from cookiecutter>=1.6.0->molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz (829kB)
+Collecting cffi!=1.11.3,>=1.8 (from cryptography->ansible==2.7.13)
+  Downloading https://files.pythonhosted.org/packages/d5/61/32b1aa5ef1bf60be4ef679c4aae082a7ceef98517e0e0fde68072c6ef8b6/cffi-1.13.2-cp37-cp37m-macosx_10_6_intel.whl (258kB)
+Collecting docutils<0.16,>=0.10 (from botocore<1.14.0,>=1.13.17->boto3>=1.3.1->-r requirements-aws.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/22/cd/a6aa959dca619918ccb55023b4cb151949c64d4d5d55b3f4ffd7eee0c6e8/docutils-0.15.2-py3-none-any.whl
+Collecting python-dateutil<2.8.1,>=2.1; python_version >= "2.7" (from botocore<1.14.0,>=1.13.17->boto3>=1.3.1->-r requirements-aws.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl
+Collecting pluggy<1.0,>=0.12 (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/92/c7/48439f7d5fd6bddb4c04b850bb862b42e3e2b98570040dfaf68aedd8114b/pluggy-0.13.0-py2.py3-none-any.whl
+Collecting more-itertools>=4.0.0 (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/45/dc/3241eef99eb45f1def35cf93af35d1cf9ef4c0991792583b8f33ea41b092/more_itertools-7.2.0-py3-none-any.whl
+Collecting py>=1.5.0 (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/76/bc/394ad449851729244a97857ee14d7cba61ddb268dce3db538ba2f2ba1f0f/py-1.8.0-py2.py3-none-any.whl
+Collecting atomicwrites>=1.0 (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/52/90/6155aa926f43f2b2a22b01be7241be3bfd1ceaf7d0b3267213e8127d41f4/atomicwrites-1.3.0-py2.py3-none-any.whl
+Collecting attrs>=17.4.0 (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting wcwidth (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting packaging (from pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/cf/94/9672c2d4b126e74c4496c6b3c58a8b51d6419267be9e70660ba23374c875/packaging-19.2-py2.py3-none-any.whl
+Collecting monotonic>=0.1 (from fasteners->python-gilt<2,>=1.2.1->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/ac/aa/063eca6a416f397bd99552c534c6d11d57f58f2e94c14780f3bbf818c4cf/monotonic-1.5-py2.py3-none-any.whl
+Collecting zipp>=0.5 (from importlib-metadata; python_version < "3.8"->pre-commit<2,>=1.17.0->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting ruamel.yaml.clib>=0.1.2; platform_python_implementation == "CPython" and python_version < "3.8" (from ruamel.yaml->ansible-lint<5,>=4.0.2->molecule==2.22)
+  Using cached https://files.pythonhosted.org/packages/fa/16/0ff4e92c21f275c071acb68f8ddd55b287e4e3b5dfd14c97983cb3506c90/ruamel.yaml.clib-0.2.0-cp37-cp37m-macosx_10_9_x86_64.whl
+Collecting arrow (from jinja2-time>=0.1.0->cookiecutter>=1.6.0->molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/a1/39/a8e116084cf4160f0821ca9bb84ec312ccca84caa2b2bffb70d95d47f91f/arrow-0.15.4-py2.py3-none-any.whl (45kB)
+Collecting pycparser (from cffi!=1.11.3,>=1.8->cryptography->ansible==2.7.13)
+Collecting pyparsing>=2.0.2 (from packaging->pytest!=3.0.2->testinfra<4,>=3.0.6->molecule==2.22)
+  Downloading https://files.pythonhosted.org/packages/c0/0c/fc2e007d9a992d997f04a80125b0f183da7fb554f1de701bbb70a8e7d479/pyparsing-2.4.5-py2.py3-none-any.whl (67kB)
+Building wheels for collected packages: click-completion, cerberus, psutil, future
+  Running setup.py bdist_wheel for click-completion: started
+  Running setup.py bdist_wheel for click-completion: finished with status 'done'
+  Stored in directory: /Users/lshakesp/Library/Caches/pip/wheels/c6/34/67/197766de5319ba6f25febfe6941a56ea72e6223038a8ea1d16
+  Running setup.py bdist_wheel for cerberus: started
+  Running setup.py bdist_wheel for cerberus: finished with status 'done'
+  Stored in directory: /Users/lshakesp/Library/Caches/pip/wheels/e9/38/1f/f2cc84182676f3ae7134b9b2d744f9c235b24d2ddc8f7fe465
+  Running setup.py bdist_wheel for psutil: started
+  Running setup.py bdist_wheel for psutil: finished with status 'done'
+  Stored in directory: /Users/lshakesp/Library/Caches/pip/wheels/33/48/b6/72b7243c5caf65b7d5b460e9fad82b1256992284e870b7db59
+  Running setup.py bdist_wheel for future: started
+  Running setup.py bdist_wheel for future: finished with status 'done'
+  Stored in directory: /Users/lshakesp/Library/Caches/pip/wheels/8b/99/a0/81daf51dcd359a9377b110a8a886b3895921802d2fc1b2397e
+Successfully built click-completion cerberus psutil future
+Installing collected packages: six, urllib3, certifi, chardet, idna, requests, docker-pycreds, websocket-client, docker, tree-format, tabulate, click, MarkupSafe, Jinja2, shellingham, click-completion, more-itertools, zipp, importlib-metadata, pluggy, py, atomicwrites, attrs, wcwidth, pyparsing, packaging, pytest, testinfra, monotonic, fasteners, PyYAML, sh, pbr, git-url-parse, colorama, python-gilt, cerberus, pycparser, cffi, cryptography, bcrypt, pynacl, paramiko, ansible, pathspec, yamllint, ptyprocess, pexpect, psutil, entrypoints, mccabe, pycodestyle, pyflakes, flake8, anyconfig, virtualenv, cfgv, nodeenv, toml, aspy.yaml, identify, pre-commit, ruamel.yaml.clib, ruamel.yaml, ansible-lint, whichcraft, python-dateutil, arrow, jinja2-time, poyo, binaryornot, future, cookiecutter, molecule, boto, docutils, jmespath, botocore, s3transfer, boto3
+Successfully installed Jinja2-2.10.3 MarkupSafe-1.1.1 PyYAML-5.1.2 ansible-2.7.13 ansible-lint-4.1.0 anyconfig-0.9.7 arrow-0.15.4 aspy.yaml-1.3.0 atomicwrites-1.3.0 attrs-19.3.0 bcrypt-3.1.7 binaryornot-0.4.4 boto-2.49.0 boto3-1.10.17 botocore-1.13.17 cerberus-1.3.2 certifi-2019.9.11 cffi-1.13.2 cfgv-2.0.1 chardet-3.0.4 click-7.0 click-completion-0.5.2 colorama-0.4.1 cookiecutter-1.6.0 cryptography-2.8 docker-3.7.3 docker-pycreds-0.4.0 docutils-0.15.2 entrypoints-0.3 fasteners-0.15 flake8-3.7.9 future-0.18.2 git-url-parse-1.2.2 identify-1.4.7 idna-2.8 importlib-metadata-0.23 jinja2-time-0.2.0 jmespath-0.9.4 mccabe-0.6.1 molecule-2.22 monotonic-1.5 more-itertools-7.2.0 nodeenv-1.3.3 packaging-19.2 paramiko-2.6.0 pathspec-0.6.0 pbr-5.4.3 pexpect-4.7.0 pluggy-0.13.0 poyo-0.5.0 pre-commit-1.20.0 psutil-5.6.5 ptyprocess-0.6.0 py-1.8.0 pycodestyle-2.5.0 pycparser-2.19 pyflakes-2.1.1 pynacl-1.3.0 pyparsing-2.4.5 pytest-5.2.2 python-dateutil-2.8.0 python-gilt-1.2.1 requests-2.22.0 ruamel.yaml-0.16.5 ruamel.yaml.clib-0.2.0 s3transfer-0.2.1 sh-1.12.14 shellingham-1.3.1 six-1.13.0 tabulate-0.8.5 testinfra-3.2.0 toml-0.10.0 tree-format-0.1.2 urllib3-1.25.7 virtualenv-16.7.7 wcwidth-0.1.7 websocket-client-0.56.0 whichcraft-0.6.1 yamllint-1.18.0 zipp-0.6.0
+You are using pip version 10.0.1, however version 19.3.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
