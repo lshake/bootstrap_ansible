@@ -1,3 +1,4 @@
 pip>=19.3.1
 docker==3.7.3
 molecule==2.22
+-e git+https://github.com/vmware/vsphere-automation-sdk-python.git
