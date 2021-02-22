@@ -1,5 +1,6 @@
 pip>=20.0.2
 docker==3.7.3
-molecule==2.22
+molecule>=3.2.3
+ansible-lint>=5.0.2
 netaddr
 apypie
