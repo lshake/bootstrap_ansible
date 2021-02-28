@@ -1,9 +1,10 @@
 pip>=20.0.2
 docker==3.7.3
 molecule>=3.2.3
-# Ansible 5 has interesting requirements for role names and galaxy namespaces
-# appears to have had some changed in 5.0.2+ which makes it work?
+# Ansible-lint 5 has interesting requirements for role names and galaxy 
+# namespaces appears to have had some changed in 5.0.2+ which makes it work?
 # ansible-lint>=5.0.2
 git+https://github.com/ansible-community/ansible-lint.git
 netaddr
 apypie
+openshift>=0.12.0
