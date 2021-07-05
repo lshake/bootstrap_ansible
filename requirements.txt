@@ -9,3 +9,7 @@ netaddr
 dnspython
 apypie
 openshift>=0.12.0
+pywinrm
+requests-ntlm
+requests-kerberos
+requests-credssp
